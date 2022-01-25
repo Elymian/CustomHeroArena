@@ -33,75 +33,84 @@ public class Character : MonoBehaviour
     public void attributeChanger(string input)//Unity button on click can take max 1 variable
     {
         string[] splitted = input.Split(',');
-        string stat = splitted[0];
-        float amount = float.Parse(splitted[1]);
-        switch (stat)
+        int length = splitted.Length;
+        if(length%2==1)
         {
-            case "str":
-            case "strength":
-                if (str + amount <= maxStr && str + amount >=minStr)
-                {
-                    str= str+amount;                   
-                }
-                break;
-            case "agi":
-            case "agility":
-                if (agi + amount <= maxAgi && agi + amount >= minAgi)
-                {
-                    agi = agi + amount;
-                }
-                break;
-            case "tgh":
-            case "toughness":
-                if (tgh + amount <= maxTgh && tgh + amount >= minTgh)
-                {
-                    tgh = tgh + amount;
-                }
-                break;
-            case "spd":
-            case "speed":
-                if (spd + amount <= maxSpd && spd + amount >= minSpd)
-                {
-                    spd = spd + amount;
-                }
-                break;
-            case "nrg":
-            case "energy":
-                if (nrg + amount <= maxNrg && nrg + amount >= minNrg)
-                {
-                    nrg = nrg + amount;
-                }
-                break;
-            case "xp":
-            case "experience":
-                if (xp + amount <= maxXp && spd + amount >= minXp)
-                {
-                    xp = xp + amount;
-                }
-                break;
-            case "lvl":
-            case "level":
-                if (lvl + amount <= maxLvl && lvl + amount >= minLvl)
-                {
-                    lvl = lvl + amount;
-                }
-                break;
-            case "luck":
-                 if (luck + amount <= maxLuck && luck + amount >= minLuck)
-                {
-                    luck = luck + amount;
-                }
-                break;
-            case "price":
-                if (price + amount <= maxPrice && price + amount >= minPrice)
-                {
-                    price = price + amount;
-                }
-                break;
-          
+            Debug.Log("Stat input not in pair, ignoring last.");
+            length = length - 1;
+
+        }
+        for (int i = 0; i < length-1; i += 2)
+        {
+            string stat = splitted[i];
+            float amount = float.Parse(splitted[i + 1]);
+            switch (stat)
+            {
+                case "str":
+                case "strength":
+                    if (str + amount <= maxStr && str + amount >= minStr)
+                    {
+                        str = str + amount;
+                    }
+                    break;
+                case "agi":
+                case "agility":
+                    if (agi + amount <= maxAgi && agi + amount >= minAgi)
+                    {
+                        agi = agi + amount;
+                    }
+                    break;
+                case "tgh":
+                case "toughness":
+                    if (tgh + amount <= maxTgh && tgh + amount >= minTgh)
+                    {
+                        tgh = tgh + amount;
+                    }
+                    break;
+                case "spd":
+                case "speed":
+                    if (spd + amount <= maxSpd && spd + amount >= minSpd)
+                    {
+                        spd = spd + amount;
+                    }
+                    break;
+                case "nrg":
+                case "energy":
+                    if (nrg + amount <= maxNrg && nrg + amount >= minNrg)
+                    {
+                        nrg = nrg + amount;
+                    }
+                    break;
+                case "xp":
+                case "experience":
+                    if (xp + amount <= maxXp && spd + amount >= minXp)
+                    {
+                        xp = xp + amount;
+                    }
+                    break;
+                case "lvl":
+                case "level":
+                    if (lvl + amount <= maxLvl && lvl + amount >= minLvl)
+                    {
+                        lvl = lvl + amount;
+                    }
+                    break;
+                case "luck":
+                    if (luck + amount <= maxLuck && luck + amount >= minLuck)
+                    {
+                        luck = luck + amount;
+                    }
+                    break;
+                case "price":
+                    if (price + amount <= maxPrice && price + amount >= minPrice)
+                    {
+                        price = price + amount;
+                    }
+                    break;
+
+            }
         }
         updatePrice();
-        Debug.Log("str up!");
     }
     public void updatePrice()
     {
