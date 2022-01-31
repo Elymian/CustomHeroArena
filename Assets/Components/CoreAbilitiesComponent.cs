@@ -31,7 +31,7 @@ public class CoreAbilitiesComponent : BaseComponent
 
     }
 
-    public override void Save(Stream stream)
+    public override void Save(ref Stream stream)
     {
         using (StreamWriter sw = new StreamWriter(stream))
         {
