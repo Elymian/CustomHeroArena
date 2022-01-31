@@ -1,18 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
+public class Attribute
+{
+    public float original, baseline, current, min, max;
+    
+}
+public class Power
+{
+    public string name;
+    public string id;
+    public string description;
+    public float price;
+}
 public class Character : MonoBehaviour
 {
-    
-    public float str, agi, tgh, spd, nrg, xp, lvl, luck, o_luck, o_str, o_agi, o_tgh, o_spd, o_nrg, o_xp, o_lvl, o_price, price;
-    public float minStr=1, minAgi=1, minTgh=1, minSpd=1, minNrg=1, minXp, minLvl=1, o_minStr, o_minAgi, o_minTgh, o_minSpd, o_minNrg, o_minXp, o_minLvl, o_minPrice, minPrice,minLuck,o_minLuck;
-    public float maxLuck = 10,maxStr=10, maxAgi=10, maxTgh=10, maxSpd=10, maxNrg=10, maxXp=10, maxLvl=10, o_maxStr=10, o_maxAgi=10, o_maxTgh=10, o_maxSpd=10, o_maxNrg=10, o_maxXp=1000000000000000f, o_maxLvl=9999, o_maxPrice=10000000000f, maxPrice= 10000000000f;
-    public string specials, o_specials;
+    Attribute str, agi, tgh, spd, nrg,luck, price, xp, lvl;
     public string owner, o_owner;
-    public void strUp()
+
+    public void Save(FileStream fileStream) 
     {
-        if (str + 1 <= maxStr)
+
+    }
+    public void StrUp()
+    {
+        if (str.baseline + 1 <= maxStr)
         {
             str++;
             updatePrice();
@@ -20,7 +34,7 @@ public class Character : MonoBehaviour
         }
         Debug.Log("Tried to go above max strength");
     }
-    public void strDown()
+    public void StrDown()
     {
         if (str - 1 >= maxStr)
         {
