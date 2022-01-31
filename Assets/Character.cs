@@ -3,46 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
-public class Attribute
-{
-    public float original, baseline, current, min, max;
-    
-}
-public class Power
-{
-    public string name;
-    public string id;
-    public string description;
-    public float price;
-}
 public class Character : MonoBehaviour
 {
     Attribute str, agi, tgh, spd, nrg,luck, price, xp, lvl;
     public string owner, o_owner;
-
     public void Save(FileStream fileStream) 
     {
 
-    }
-    public void StrUp()
-    {
-        if (str.baseline + 1 <= maxStr)
-        {
-            str++;
-            updatePrice();
-            Debug.Log("str up!");
-        }
-        Debug.Log("Tried to go above max strength");
-    }
-    public void StrDown()
-    {
-        if (str - 1 >= maxStr)
-        {
-            str--;
-            updatePrice();
-            Debug.Log("str down!");
-        }
-        Debug.Log("Tried to go bellow min strength");
     }
     public void attributeChanger(string input)//Unity button on click can take max 1 variable
     {
@@ -62,28 +29,28 @@ public class Character : MonoBehaviour
             {
                 case "str":
                 case "strength":
-                    if (str + amount <= maxStr && str + amount >= minStr)
+                    if (str.baseline + amount <= maxStr && str.baseline + amount >= minStr)
                     {
-                        str = str + amount;
+                        str.baseline = str.baseline + amount;
                     }
                     break;
                 case "agi":
                 case "agility":
-                    if (agi + amount <= maxAgi && agi + amount >= minAgi)
+                    if (agi.baseline + amount <= maxAgi && agi.baseline + amount >= minAgi)
                     {
-                        agi = agi + amount;
+                        agi.baseline = agi.baseline + amount;
                     }
                     break;
                 case "tgh":
                 case "toughness":
-                    if (tgh + amount <= maxTgh && tgh + amount >= minTgh)
+                    if (tgh.baseline + amount <= maxTgh && tgh.baseline + amount >= minTgh)
                     {
-                        tgh = tgh + amount;
+                        tgh = tgh.baseline + amount;
                     }
                     break;
                 case "spd":
                 case "speed":
-                    if (spd + amount <= maxSpd && spd + amount >= minSpd)
+                    if (spd.baseline + amount <= maxSpd && spd.baseline + amount >= minSpd)
                     {
                         spd = spd + amount;
                     }
@@ -153,13 +120,12 @@ public class Character : MonoBehaviour
                     break;
             }
         }
-        updatePrice();//This should be eventually removed from this function.
     }
     public void updatePrice()
     {
         price = 0;
-        price += getAttributePrice(str);
-        price += getAttributePrice(agi);
+        price += getAttributePrice(str.baseline);
+        price += getAttributePrice(agi.baseline);
         price += getAttributePrice(tgh);
         price += getAttributePrice(spd);
         price += getAttributePrice(nrg);
