@@ -17,7 +17,7 @@ public class BaseComponent : MonoBehaviour
         
     }
 
-    public void Save(Stream stream)
+    virtual public void Save(Stream stream)
     {
 
     }
