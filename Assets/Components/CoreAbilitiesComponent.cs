@@ -10,7 +10,7 @@ public class Ability
     public int m_Base;
 }
 
-public class CoreAbilitiesComponent : MonoBehaviour
+public class CoreAbilitiesComponent : BaseComponent
 {
     public Ability m_Str;
     public Ability m_Dex;
