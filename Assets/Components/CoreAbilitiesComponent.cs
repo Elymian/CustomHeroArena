@@ -35,7 +35,7 @@ public class CoreAbilitiesComponent : BaseComponent
     public Attribute m_Xp;
     public Attribute m_Lvl;
 
-    public override void Save(Stream stream)
+    public override void Save(ref Stream stream)
     {
         using (StreamWriter sw = new StreamWriter(stream))
         {
