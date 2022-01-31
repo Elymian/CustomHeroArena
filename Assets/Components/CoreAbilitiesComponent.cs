@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 [System.Serializable]
@@ -10,7 +11,7 @@ public class Ability
     public int m_Base;
 }
 
-public class CoreAbilitiesComponent : MonoBehaviour
+public class CoreAbilitiesComponent : BaseComponent
 {
     public Ability m_Str;
     public Ability m_Dex;
@@ -28,6 +29,20 @@ public class CoreAbilitiesComponent : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public override void Save(Stream stream)
+    {
+        using (StreamWriter sw = new StreamWriter(stream))
+        {
+            sw.Write(m_Str);
+            sw.Write(m_Dex);
+            sw.Write(m_Con);
+            sw.Write(m_Wis);
+            sw.Write(m_Int);
+            sw.Write(m_Cha);
+
+        }
     }
 }
 
