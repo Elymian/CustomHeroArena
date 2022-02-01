@@ -5,34 +5,33 @@ using TMPro;
 
 public class TextUpdater : MonoBehaviour
 {
-    public void Start()
-    {
-        StatReminderUpdate();
-    }
+
     public TextMeshProUGUI txtStats;
     public TextMeshProUGUI txtPrice;
     public TextMeshProUGUI txtFlavor;
     public Character character;
+    
     public void StatReminderUpdate() 
     {
-        txtStats.text =
-        "LvL: " + character.lvl + " Xp:" + character.xp + "/" + character.maxXp + "\n" +
-        "Strength: " + character.str + "\n" +
-        "Agility: " + character.agi + "\n" +
-        "Toughness: " + character.tgh + "\n" +
-        "Speed: " + character.spd + "\n" +
-        "Energy: " + character.nrg + "\n" +
-        "Luck: " + character.luck + "\n" +
-        "-----" +
-        "Reflect 50 % of projectiles \n";
-        txtPrice.text = "Price " + character.price + "\n";
+
+        txtStats.text = 
+        "LvL: " + character.attributes.m_Lvl.m_Baseline + " Xp:" + character.attributes.m_Xp.m_Baseline  + "/" + character.attributes.m_Xp.m_Max + "\n" +
+        "Strength: " + character.attributes.m_Lvl.m_Current + "\n" +
+        "Agility: " + character.attributes.m_Agi.m_Baseline + "\n" +
+        "Constitution: " + character.attributes.m_Agi.m_Baseline + "\n" +
+        "Speed: " + character.attributes.m_Spd.m_Baseline + "\n" +
+        "Energy: " + character.attributes.m_Nrg.m_Baseline + "\n" +
+        "Luck: " + character.attributes.m_Luck.m_Baseline + "\n" +
+        "-----" + "\n";
+
+        txtPrice.text = "Price " + character.attributes.m_Price.m_Baseline + "\n";
     }
-    public void goliathFlavor()
+    public void Flavor(Ability ability)
     {
-        txtFlavor.text = "So strong, so big! A little bit clumsy.\n\n" +
-            "+1 str, +1 max str \n" +
-            "+1 tgh, +1 max tgh \n" +
-            "-1 agi, -1 max agi \n" +
-            "-1 spd, -1 max spd.";
+        txtFlavor.text = ability.m_Description;
+    }
+    public void Start()
+    {
+        StatReminderUpdate();
     }
 }

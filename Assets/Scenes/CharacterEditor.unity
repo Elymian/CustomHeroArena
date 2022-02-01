@@ -619,7 +619,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1889727750}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TextUpdater, Assembly-CSharp
         m_MethodName: StatReminderUpdate
         m_Mode: 1
@@ -776,7 +776,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1889727750}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TextUpdater, Assembly-CSharp
         m_MethodName: StatReminderUpdate
         m_Mode: 1
@@ -933,7 +933,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1889727750}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TextUpdater, Assembly-CSharp
         m_MethodName: StatReminderUpdate
         m_Mode: 1
@@ -1277,7 +1277,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &251122125
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1294,7 +1294,7 @@ RectTransform:
   - {fileID: 102767930}
   - {fileID: 313505361}
   m_Father: {fileID: 2140107929}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1841,7 +1841,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &463185650
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2008,7 +2008,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1889727750}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TextUpdater, Assembly-CSharp
         m_MethodName: StatReminderUpdate
         m_Mode: 1
@@ -2207,7 +2207,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &546214360
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2221,12 +2221,12 @@ RectTransform:
   m_Children:
   - {fileID: 463185650}
   - {fileID: 1407169428}
-  m_Father: {fileID: 2140107929}
-  m_RootOrder: 0
+  m_Father: {fileID: 572361495}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 222.83072, y: -0.64446795}
+  m_AnchoredPosition: {x: -33.92108, y: -19.6156}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &572361491
@@ -2326,6 +2326,7 @@ RectTransform:
   - {fileID: 1494777747}
   - {fileID: 704102719}
   - {fileID: 870920742}
+  - {fileID: 546214360}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2623,19 +2624,19 @@ MonoBehaviour:
           m_StringArgument: 1goliath
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1011071449}
-        m_TargetAssemblyTypeName: Character, Assembly-CSharp
-        m_MethodName: updatePrice
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: TextUpdater, Assembly-CSharp
+        m_MethodName: Flavor
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1241032724}
+          m_ObjectArgumentAssemblyTypeName: Ability, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1889727750}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TextUpdater, Assembly-CSharp
         m_MethodName: StatReminderUpdate
         m_Mode: 1
@@ -3270,7 +3271,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1889727750}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TextUpdater, Assembly-CSharp
         m_MethodName: StatReminderUpdate
         m_Mode: 1
@@ -3585,7 +3586,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Points Cost: 5000'
+  m_text: 'Points Cost: ****'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -3967,13 +3968,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1889727750}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TextUpdater, Assembly-CSharp
-        m_MethodName: goliathFlavor
-        m_Mode: 1
+        m_MethodName: Flavor
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1241032724}
+          m_ObjectArgumentAssemblyTypeName: Ability, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4124,7 +4125,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1889727750}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TextUpdater, Assembly-CSharp
         m_MethodName: StatReminderUpdate
         m_Mode: 1
@@ -4584,8 +4585,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1011071450}
   - component: {fileID: 1011071449}
+  - component: {fileID: 1011071451}
+  - component: {fileID: 1011071453}
+  - component: {fileID: 1011071452}
   m_Layer: 5
-  m_Name: Character
+  m_Name: CharacterData
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4603,63 +4607,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda7c542aacadf3498230ec4a438fd34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  str: 1
-  agi: 1
-  tgh: 1
-  spd: 1
-  nrg: 1
-  xp: 0
-  lvl: 1
-  luck: 1
-  o_luck: 0
-  o_str: 0
-  o_agi: 0
-  o_tgh: 0
-  o_spd: 0
-  o_nrg: 0
-  o_xp: 0
-  o_lvl: 0
-  o_price: 0
-  price: 600
-  minStr: 1
-  minAgi: 1
-  minTgh: 1
-  minSpd: 1
-  minNrg: 1
-  minXp: 0
-  minLvl: 1
-  o_minStr: 0
-  o_minAgi: 0
-  o_minTgh: 0
-  o_minSpd: 0
-  o_minNrg: 0
-  o_minXp: 0
-  o_minLvl: 0
-  o_minPrice: 0
-  minPrice: 0
-  minLuck: 1
-  o_minLuck: 0
-  maxLuck: 10
-  maxStr: 10
-  maxAgi: 10
-  maxTgh: 10
-  maxSpd: 10
-  maxNrg: 10
-  maxXp: 10
-  maxLvl: 9999
-  o_maxStr: 0
-  o_maxAgi: 0
-  o_maxTgh: 0
-  o_maxSpd: 0
-  o_maxNrg: 0
-  o_maxXp: 0
-  o_maxLvl: 0
-  o_maxPrice: 0
-  maxPrice: 1e+14
-  specials: 
-  o_specials: 
-  owner: 
-  o_owner: 
+  attributes: {fileID: 1011071452}
+  abilities: {fileID: 1011071451}
+  owner: Player1
+  o_owner: Player1
 --- !u!224 &1011071450
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4679,6 +4630,42 @@ RectTransform:
   m_AnchoredPosition: {x: 781, y: 255}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1011071451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011071448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2ad70d8aac524b4f89b71e1fa0398a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1011071452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011071448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d03217dccfb3874a85074f2b8c7ee6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1011071453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011071448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 865080e4f26ac5040afe4732bcb1108f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1056083146
 GameObject:
   m_ObjectHideFlags: 0
@@ -5248,7 +5235,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1889727750}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TextUpdater, Assembly-CSharp
         m_MethodName: StatReminderUpdate
         m_Mode: 1
@@ -5432,6 +5419,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157042078}
   m_CullTransparentMesh: 1
+--- !u!1 &1241032722
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1241032723}
+  - component: {fileID: 1241032724}
+  m_Layer: 0
+  m_Name: Goliath
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1241032723
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241032722}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1284865874}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1241032724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241032722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dfbd5e98fb7762468294b422c00decc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_name: Goliath
+  m_Description: "So strong, so big! A little bit clumsy.\n\n+1 str, +1 max str \n+1
+    tgh, +1 max tgh \n-1 agi, -1 max agi \n-1 spd, -1 max spd \n"
+  m_Cost: 1000
+  m_id: 1
 --- !u!1 &1246243002
 GameObject:
   m_ObjectHideFlags: 0
@@ -5700,6 +5735,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257146138}
   m_CullTransparentMesh: 1
+--- !u!1 &1284865873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1284865874}
+  m_Layer: 0
+  m_Name: Abilities
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1284865874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284865873}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 863.12244, y: 535.7548, z: -71.34366}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1241032723}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1407169427
 GameObject:
   m_ObjectHideFlags: 0
@@ -5967,6 +6033,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411617661}
   m_CullTransparentMesh: 1
+--- !u!1 &1415301772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1415301774}
+  - component: {fileID: 1415301773}
+  m_Layer: 0
+  m_Name: TextUpdater
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1415301773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415301772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d3887fbbe1d5043875b484a09b2abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtStats: {fileID: 725675916}
+  txtPrice: {fileID: 809014123}
+  txtFlavor: {fileID: 1773787516}
+  attributes: {fileID: 1011071452}
+--- !u!4 &1415301774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415301772}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 592.126, y: 309.8813, z: -26.925072}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1425676178
 GameObject:
   m_ObjectHideFlags: 0
@@ -6074,7 +6187,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1889727750}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TextUpdater, Assembly-CSharp
         m_MethodName: StatReminderUpdate
         m_Mode: 1
@@ -6231,7 +6344,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1889727750}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TextUpdater, Assembly-CSharp
         m_MethodName: StatReminderUpdate
         m_Mode: 1
@@ -6296,7 +6409,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1457871714
 Transform:
   m_ObjectHideFlags: 0
@@ -6312,7 +6425,7 @@ Transform:
   - {fileID: 880686573}
   - {fileID: 628711488}
   m_Father: {fileID: 2140107929}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1494777746
 GameObject:
@@ -6870,7 +6983,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1889727750}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TextUpdater, Assembly-CSharp
         m_MethodName: StatReminderUpdate
         m_Mode: 1
@@ -7266,53 +7379,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1889727749
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1889727751}
-  - component: {fileID: 1889727750}
-  m_Layer: 0
-  m_Name: TextUpdater
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1889727750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1889727749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22d3887fbbe1d5043875b484a09b2abb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  txtStats: {fileID: 725675916}
-  txtPrice: {fileID: 809014123}
-  txtFlavor: {fileID: 1773787516}
-  character: {fileID: 1011071449}
---- !u!4 &1889727751
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1889727749}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 592.126, y: 309.8813, z: -26.925072}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1906775562
 GameObject:
   m_ObjectHideFlags: 0
@@ -7554,7 +7620,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1889727750}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TextUpdater, Assembly-CSharp
         m_MethodName: StatReminderUpdate
         m_Mode: 1
@@ -7943,7 +8009,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1889727750}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TextUpdater, Assembly-CSharp
         m_MethodName: StatReminderUpdate
         m_Mode: 1
@@ -8100,7 +8166,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1889727750}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TextUpdater, Assembly-CSharp
         m_MethodName: StatReminderUpdate
         m_Mode: 1
@@ -8447,7 +8513,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 546214360}
   - {fileID: 251122125}
   - {fileID: 1457871714}
   m_Father: {fileID: 572361495}

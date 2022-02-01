@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [System.Serializable]
@@ -32,5 +32,5 @@ public class CharacterData
         o_owner = character.o_owner;
         o_price = character.o_price;
     }
-}
+}*/
  

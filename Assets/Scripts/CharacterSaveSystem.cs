@@ -22,12 +22,10 @@ public static class CharacterSaveSystem
         }*/
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        CharacterData data = new CharacterData(character);
-
-        formatter.Serialize(stream, data);
+        formatter.Serialize(stream, character);
         stream.Close();
     }
-    public static CharacterData LoadCharacter(string characterName)
+    public static Character LoadCharacter(string characterName)
     {
         string path = Application.persistentDataPath + "/" + characterName + ".char";
         if (File.Exists(path))
@@ -35,7 +33,7 @@ public static class CharacterSaveSystem
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(path, FileMode.Open);
 
-            CharacterData data = formatter.Deserialize(stream) as CharacterData;
+            Character data = formatter.Deserialize(stream) as Character;
             stream.Close();
             return data;
         }
