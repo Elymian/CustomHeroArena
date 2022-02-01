@@ -4585,9 +4585,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1011071450}
   - component: {fileID: 1011071449}
-  - component: {fileID: 1011071451}
   - component: {fileID: 1011071453}
   - component: {fileID: 1011071452}
+  - component: {fileID: 1011071451}
   m_Layer: 5
   m_Name: CharacterData
   m_TagString: Untagged
@@ -6065,7 +6065,7 @@ MonoBehaviour:
   txtStats: {fileID: 725675916}
   txtPrice: {fileID: 809014123}
   txtFlavor: {fileID: 1773787516}
-  attributes: {fileID: 1011071452}
+  character: {fileID: 1011071449}
 --- !u!4 &1415301774
 Transform:
   m_ObjectHideFlags: 0
