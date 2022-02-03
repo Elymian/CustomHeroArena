@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Grid
+public class Grid<TGridObject>
 {
     private float cellSize;
     private int width;
@@ -10,12 +10,12 @@ public class Grid
     private int[,] gridArray;
     private Vector3 originPosition;
 
-    public Grid(int l_width, int l_height, float l_cellSize, Vector3 originPosition)
+    public Grid(int l_width, int l_height, float l_cellSize, Vector3 l_originPosition)
     {
         this.width = l_width;
         this.height = l_height;
         this.cellSize = l_cellSize;
-        this.originPosition = originPosition;
+        this.originPosition = l_originPosition;
         gridArray = new int[width, height];
 
         for(int x=0; x<gridArray.GetLength(0);x++)
