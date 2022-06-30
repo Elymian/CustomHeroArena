@@ -46,7 +46,6 @@ namespace Pathfinding {
 
 		protected override void Inspector () {
 			var isAIPath = typeof(AIPath).IsAssignableFrom(target.GetType());
-
 			Section("Shape");
 			FloatField("radius", min: 0.01f);
 			FloatField("height", min: 0.01f);

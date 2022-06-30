@@ -259,7 +259,11 @@ namespace Pathfinding {
 			interpolator.SetPath(null);
 			reachedEndOfPath = false;
 		}
-
+		/// <summary>
+		/// Script that is to enabled OnTargetReached();.
+		/// Itent is to enable MouseClickMovement here;
+		/// </summary>
+		/*public MonoBehaviour ScriptToBeEnabled;*/
 		/// <summary>
 		/// The end of the path has been reached.
 		/// If you want custom logic for when the AI has reached it's destination add it here. You can
@@ -268,9 +272,12 @@ namespace Pathfinding {
 		/// This method will be called again if a new path is calculated as the destination may have changed.
 		/// So when the agent is close to the destination this method will typically be called every <see cref="repathRate"/> seconds.
 		/// </summary>
+		/// 
 		public virtual void OnTargetReached () {
+			/*this.enabled = false;
+			ScriptToBeEnabled.enabled = true;*/
 		}
-
+		
 		/// <summary>
 		/// Called when a requested path has been calculated.
 		/// A path is first requested by <see cref="UpdatePath"/>, it is then calculated, probably in the same or the next frame.
